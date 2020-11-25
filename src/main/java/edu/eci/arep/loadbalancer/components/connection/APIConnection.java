@@ -20,7 +20,7 @@ public class APIConnection {
     public String loadApplication(Procfile procfile){
         ObjectMapper objectMapper = new ObjectMapper();
 
-        Unirest.setTimeouts(300000, 300000);
+        Unirest.setTimeouts(60000, 60000);
         try {
             String url = hosts.get(roundRobin);
             procfile.setServerUrl(hosts.get(roundRobin));
