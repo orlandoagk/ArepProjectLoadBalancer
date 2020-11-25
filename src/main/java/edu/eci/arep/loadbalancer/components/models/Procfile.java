@@ -3,7 +3,7 @@ package edu.eci.arep.loadbalancer.components.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Procfile {
-    String mainClass, gitRepo, AppName;
+    String mainClass, gitRepo, AppName,serverUrl;
     public Procfile(){}
     public Procfile(String mainClass, String gitRepository, String AppName) {
         this.mainClass = mainClass;
@@ -29,9 +29,19 @@ public class Procfile {
 
         return AppName;
     }
+
     public void setAppName(String appName) {
         this.AppName = appName;
     }
+
+    public String getServerUrl() {
+        return serverUrl;
+    }
+
+    public void setServerUrl(String serverUrl) {
+        this.serverUrl = serverUrl;
+    }
+
     @Override
     public String toString() {
 
