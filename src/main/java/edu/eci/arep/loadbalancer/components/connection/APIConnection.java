@@ -27,7 +27,7 @@ public class APIConnection {
             String petition = Unirest.post(url+":4567/newApp").body(objectMapper.writeValueAsString(procfile)).asString().getBody();
             System.out.println(petition);
             roundRobin = (roundRobin+=1) % hosts.size();
-            return url;
+            return petition;
         } catch (Exception e){
             e.printStackTrace();
             return null;
