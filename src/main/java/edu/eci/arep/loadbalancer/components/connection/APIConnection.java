@@ -13,8 +13,8 @@ public class APIConnection {
     List<String> hosts;
     int roundRobin;
     public APIConnection(){
-        hosts = new ArrayList<>(Arrays.asList("http://ec2-54-211-135-238.compute-1.amazonaws.com",
-                "http://ec2-54-160-75-107.compute-1.amazonaws.com","http://ec2-54-163-34-109.compute-1.amazonaws.com"));
+        hosts = new ArrayList<>(Arrays.asList("http://ec2-3-85-54-89.compute-1.amazonaws.com",
+                "http://ec2-54-227-80-1.compute-1.amazonaws.com","http://ec2-3-85-86-158.compute-1.amazonaws.com"));
         roundRobin = 0;
     }
     public String loadApplication(Procfile procfile){
